@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open KW Mendoza | Programa</title>
+<style>
+  :root{
+    --bg:#f7f8fb;
+    --text:#1e1e1f;
+    --muted:#6b6b70;
+    --brand:#0A1F44;
+    --cta:#39FF14;
+    --card:#ffffff;
+    --border:#e6e7ec;
+  }
+  *{box-sizing:border-box; font-family:system-ui,-apple-system,Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'}
+  body{margin:0; background:var(--bg); color:var(--text);}
+  header{background:var(--brand); color:#fff; padding:18px 20px;}
+  header .wrap{max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px; justify-content:space-between;}
+  header nav a{color:#cfe4ff; text-decoration:none; margin:0 10px; font-size:14px}
+  .container{max-width:1100px; margin:24px auto; display:grid; grid-template-columns: 220px 1fr 280px; gap:22px; padding:0 16px;}
+  .menu{position:sticky; top:14px; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px;}
+  .menu h4{margin:6px 0 10px 0; font-size:14px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted);}
+  .menu a{display:block; padding:10px 8px; color:var(--text); text-decoration:none; border-radius:8px; font-size:15px}
+  .menu a:hover{background:#f1f3f9}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px;}
+  h1{margin:0 0 10px 0; font-size:28px}
+  .meta{display:flex; gap:10px; align-items:center; color:var(--muted); font-size:14px; margin-bottom:8px}
+  .badge{background:#e9eefc; color:#152a6a; padding:4px 10px; border-radius:999px; font-size:12px}
+  .agenda{margin-top:16px}
+  .agenda li{margin:10px 0; line-height:1.38}
+  .cta{display:inline-block; margin-top:16px; background:var(--cta); color:#000; border:none; padding:12px 18px; border-radius:10px; font-weight:700; text-decoration:none}
+  .cta:hover{filter:brightness(.96)}
+  .aside .event{display:block; padding:14px; border:1px solid var(--border); border-radius:12px; margin-bottom:12px; background:var(--card); text-decoration:none; color:var(--text)}
+  .aside .event small{color:var(--muted)}
+  .map{margin-top:14px; border-radius:12px; overflow:hidden}
+  footer{max-width:1100px; margin:24px auto 40px; padding:0 16px; color:var(--muted); font-size:13px}
+  @media (max-width: 980px){
+    .container{grid-template-columns:1fr;}
+    .menu{position:relative}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <strong style="font-size:18px;">Keller Williams Mendoza</strong>
+      <span class="badge">Evento</span>
+    </div>
+    <nav>
+      <a href="#programa">Programa</a>
+      <a href="#ponentes">Ponentes</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#inscripcion">Inscripción</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="sidebar">
+    <div class="menu">
+      <h4>Secciones</h4>
+      <a href="#programa">Leadership Lab</a>
+      <a href="#ponentes">Equipo</a>
+      <a href="#admision">Proceso de Admisión</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#internac">Internacionalización</a>
+      <a href="#alumni">Alumni</a>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="card" id="programa">
+      <div class="meta">
+        <span>Martes 18/11, 19h</span> · <span>Sheraton Mendoza</span>
+      </div>
+      <h1>Open KW Mendoza | Programa Ejecutivo</h1>
+      <p>Actividad no arancelada con cupos limitados. Te invitamos a participar del <strong>Open KW</strong>, un encuentro para conocer nuestra propuesta de formación ejecutiva aplicada al mercado inmobiliario. Habrá una charla central sobre cómo el contexto económico impacta en las decisiones comerciales en Argentina y una presentación de nuestra oferta académica.</p>
+      <ul class="agenda">
+        <li><strong>19:00</strong> | Presentación de la Escuela de Negocios de KW Mendoza</li>
+        <li><strong>19:15</strong> | Keynote: <em>Argentina y el contexto internacional: cómo leer los cambios de mercado para tomar decisiones</em></li>
+        <li><strong>19:45</strong> | Programa Ejecutivo de KW</li>
+      </ul>
+      <a class="cta" id="inscripcion" href="https://forms.gle/tu-form" target="_blank" rel="noopener">Inscripción on-line</a>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Sheraton+Mendoza&output=embed" width="100%" height="260" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="card" id="ponentes">
+      <h2>Ponentes</h2>
+      <p><strong>Alejo Rodríguez Cacio</strong> · Director del MBA/EMBA — charla central.</p>
+      <p><strong>Equipo KW Mendoza</strong> · Presentación de programas y beneficios.</p>
+    </div>
+
+    <div class="card" id="beneficios">
+      <h2>Beneficios</h2>
+      <ul>
+        <li>Networking con directivos y asesores.</li>
+        <li>Becas parciales por asistencia (cupos limitados).</li>
+        <li>Certificado de asistencia digital.</li>
+      </ul>
+    </div>
+  </section>
+
+  <aside class="aside">
+    <a class="event" href="#">
+      <div><strong>05 nov</strong> · 19h</div>
+      <small>Reunión informativa on-line · Programa Ejecutivo</small>
+    </a>
+    <a class="event" href="#">
+      <div><strong>12 nov</strong> · 19h</div>
+      <small>Reunión en Tucumán · Programa Ejecutivo</small>
+    </a>
+    <a class="event" href="#">
+      <div><strong>17 nov</strong> · 19h</div>
+      <small>Reunión informativa on-line · Programa Ejecutivo</small>
+    </a>
+  </aside>
+</main>
+
+<footer>
+  © 2025 KW Mendoza · Contacto: admisiones@kwmendoza.com · WhatsApp: +54 9 261 000 0000
+</footer>
+</body>
+</html>
